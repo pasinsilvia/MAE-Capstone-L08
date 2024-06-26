@@ -16,30 +16,30 @@ Room Impulse Response (RIR) compression is a growing necessity in the audio fiel
 ├── code
 │   ├── lib
 │   ├── savedData
-│   ├── SISO_eval.m
-│   ├── SISO_testEra.m
 │   ├── MIMO_eval.m
 │   ├── MIMO_testEra.m
+│   ├── plot_EDC.m
+│   ├── plot_EDR.m
+│   ├── plot_script.m
+│   ├── SISO_eval.m
+│   ├── SISO_testEra.m
+│   ├── test_speech.m
 │   ├── ULA_eval.m
 │   ├── ULA_testEra.m
-│   ├── plot_script.m
-│   ├── plot_EDR.m
-│   ├── plot_EDC.m(????)
-│   ├── test_speech.m
 ├── data
 ```
 
 - `code`: folder with the source code.
     - `lib`: folder with utilities for computing ERA, preprocessing, EDR.
     - `savedData`: folder with data of MSE and SDR saved for plot.
-    - `SISO_eval.m`: RIR (SISO) is preprocessed and compress through ERA with a range of values of 'r'. For each level of compression, MSE ans SDR are saved.
-    - `SISO_testEra.m`: RIR (SISO) is preprocessed and compressed through ERA with set values of 'r' and for each level of compression the resulting compressed RIR is saved.
     - `MIMO_eval.m`: RIR matrix (MIMO) is preprocessed and compress through ERA with a range of values of 'r'. For each level of compression, MSE ans SDR are saved.
     - `MIMO_testEra.m`: RIR matrix (MIMO) is preprocessed and compressed through ERA with set values of 'r' and for each level of compression the resulting compressed RIR is saved. 
+    - `plot_EDC.m`: script for plotting the Energy Decay Curve of original and compressed RIRs.
+    - `plot_EDR.m`: script for plotting the Energy Decay Relief of the original RIR and each saved compressed RIR.
+    - `plot_script.m`: script for plotting MSE and SDR.
+    - `SISO_eval.m`: RIR (SISO) is preprocessed and compress through ERA with a range of values of 'r'. For each level of compression, MSE ans SDR are saved.
+    - `SISO_testEra.m`: RIR (SISO) is preprocessed and compressed through ERA with set values of 'r' and for each level of compression the resulting compressed RIR is saved.
+    - `test_speech.m`: script for applying the saved RIRs to some speech signals.
     - `ULA_eval.m`: RIR matrix (MIMO ULA) is preprocessed and compress through ERA with a range of values of 'r'. For each level of compression, MSE ans SDR are saved.
     - `ULA_testEra.m`: RIR matrix (MIMO ULA) is preprocessed and compressed through ERA with set values of 'r' and for each level of compression the resulting compressed RIR is saved. 
-    - `plot_script`: script for plotting MSE and SDR.
-    - `plot_EDR.m`: script for plotting the EDR of the original RIR and each saved compressed RIR.
-    - `plot_EDC.m`: script for ???
-    - `test_speech.m`: script for applying the saved RIRs to some speech signals.
 - `data`: folder with audio data and output images.
